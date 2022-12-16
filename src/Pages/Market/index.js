@@ -49,9 +49,6 @@ export default function Market(){
         </View>
     )
 }
-{/* <View style={styles.cardLeft}>
-                            
-</View> */}
 
 const styles = StyleSheet.create({
     container: {

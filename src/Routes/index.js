@@ -6,6 +6,7 @@ import Live from '../Pages/Live';
 import Creater from '../Pages/Creater';
 import Choose from '../Pages/Choose';
 import Market from '../Pages/Market';
+import Footer from '../Pages/Footer';
 
 export default function  Routes(){
     return(
@@ -17,6 +18,7 @@ export default function  Routes(){
             <Creater/>
             <Choose/>
             <Market/>
+            <Footer/>
         </>
     );
 }
