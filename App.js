@@ -1,12 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, ScrollView, StyleSheet } from 'react-native';
+import Header from './src/Pages/Header';
+import Routes from './src/Routes';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={{marginBottom: 70, backgroundColor: '#1D2544'}}>
+      <Header/>
+      <ScrollView>
+        <Routes/>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
