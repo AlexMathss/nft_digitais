@@ -6,7 +6,7 @@ import Live from '../Pages/Live';
 import Creater from '../Pages/Creater';
 import Choose from '../Pages/Choose';
 import Market from '../Pages/Market';
-import Footer from '../Pages/Footer';
+import Footer from '../Pages/Footer'
 
 export default function  Routes(){
     return(
