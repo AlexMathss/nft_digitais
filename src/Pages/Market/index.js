@@ -1,7 +1,7 @@
 import React from "react";
 import {ImageBackground, Text, View, StyleSheet} from 'react-native';
-import CardMarket from "../../Componetns/CardMarket";
-
+import CardMarketLeft from "../../Componetns/CardMarketLeft";
+import CardMarketRight from "../../Componetns/CardMarketRight";
 export default function Market(){
     return(
         <View style={styles.container} >
@@ -12,11 +12,35 @@ export default function Market(){
                         <Text style={styles.sub}>The largest and unique{'\n'}Super rare NFT marketplace.</Text>
                     </View>
                     <View style={styles.card}>
-                        <CardMarket/>
+                        <View style={styles.cardLeft}>
+                            <CardMarketLeft
+                                datames={'January'}
+                                datatitle={'Brief'}
+                            />
+                            <CardMarketLeft
+                                datames={'March'}
+                                datatitle={'Discover'}
+                            />
+                            <CardMarketLeft
+                                datames={'May'}
+                                datatitle={'Testing'}
+                            />
+                        </View>
                        
                         <View style={styles.line}/>
                         <View style={styles.cardRight}>
-
+                            <CardMarketRight
+                                datames={'Fabruary'}
+                                datatitle={'Research'}
+                            />
+                            <CardMarketRight
+                                datames={'April'}
+                                datatitle={'Design'}
+                            />
+                            <CardMarketRight
+                                datames={'June'}
+                                datatitle={'Launch & Feedback'}
+                            />
                         </View>
                     </View>
                 </View>
@@ -31,17 +55,15 @@ export default function Market(){
 
 const styles = StyleSheet.create({
     container: {
-        height: 550,
+        height: 750,
         flex: 1
     },
     content: {
-        backgroundColor: 'orange',
-        height: 550,
+        height: 700,
         alignItems: 'center',
         justifyContent: 'space-around'
     },
     containerText: {
-        backgroundColor: 'red',
         width: 216,
         height: 60,
         alignItems: 'center',
@@ -59,22 +81,22 @@ const styles = StyleSheet.create({
         color: '#FFF'
     },
     card: {
-        width: 387,
-        height: 352,
-        backgroundColor: 'green',
+        width: 400,
+        height: 600,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center'
     },
     cardLeft: {
-        backgroundColor: 'red',
         width: 174,
-        height: 352
+        height: 500,
+        justifyContent: 'space-between'
     },
     cardRight: {
-        backgroundColor: 'red',
-        width: 174,
-        height: 352
+        width: 190,
+        height: 500,
+        marginTop: 60,
+        justifyContent: 'space-between'
     },
     line:{
         height: 269.71, 
